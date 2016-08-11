@@ -156,7 +156,7 @@ class DashboardController extends Controller
     {
 
         // Get logged in user model / object
-        $user = Auth::user()->id;
+        $user = Auth::user();
 
         // Get the rules / validator for validating the signature input form
         $validator = $this->getSignaturePetitionFormValidator();
@@ -172,6 +172,10 @@ class DashboardController extends Controller
 
             // Retrieve the petition model / record by the specified id
             $petition = ($id) ? Petition::find($id) : null;
+
+            if (Signature::userAlreadySignedPetiton($petition->id, $user->id)) {
+                return redirect('/dashboard')->withErrors(['You have already signed this petition.']);    
+            }
 
             // Make sure we have a petition model object / record
             if($petition) {

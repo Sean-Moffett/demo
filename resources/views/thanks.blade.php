@@ -19,7 +19,9 @@
                 </div>
             </div>
             <br><br>
-            <a href="/dashboard/"><button type="button">Ok</button></a>
+            <div class="button-container">
+                <a href="/dashboard/"><button type="button">Ok</button></a>
+            </div>
         </div>
     </body>
 </html>

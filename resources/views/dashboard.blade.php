@@ -35,7 +35,7 @@
                 @foreach($auth_user_petitions as $user_petition)
                     <tr>
                         <td>{{$user_petition->title}}</td>
-                        <td>{{$user_petition->created_at}}/td>
+                        <td>{{$user_petition->created_at}}</td>
                         <td>@if($user_petition->private)Private @else Public @endif</td>
                         <td><a href="/petition/view/{{$user_petition->id}}">View</a></td>
                         <td><a href="/petition/edit/{{$user_petition->id}}">Edit</a></td>

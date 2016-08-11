@@ -22,24 +22,46 @@
 
             <div class="dashboard-title u-center">Petition Details</div>
 
-
-
-
             <div class="petition-thanks-container">
                 <div class="petition-thanks-msg">
 
-                    <div style="font-size:18px;">
+                    <div class="sign-petition-container">
 
-                        <img src="/{{$petition->picture_path}}" >
-                        <br><br>
+                        <div class="sign-petition-content">
 
-                        <b>Petition Title:</b> {{$petition->title}}<br><br>
+                            <img src="/{{$petition->picture_path}}" >
+                            <br>
 
-                        <b>Petition Summary:</b><br> {{$petition->summary}}<br><br>
-             
-                        <b>Petition Body:</b><br> {{$petition->body}}<br><br>
+                            <div class="sign-petition-content-block-header">
+                                Petition Recipient: 
+                            </div>
+                            <div class="sign-petition-content-block">
+                                {{$petition->recipient_name}} ({{$petition->recipient_email}})<br><br>
+                            </div>
+
+                            <div class="sign-petition-content-block-header">
+                                 Title: 
+                            </div>
+                            <div class="sign-petition-content-block">
+                                {{$petition->title}}<br><br>
+                            </div>
+
+                            <div class="sign-petition-content-block-header">
+                                Summary: 
+                            </div>
+                            <div class="sign-petition-content-block">
+                                {{$petition->summary}}<br><br>
+                            </div>
+
+                            <div class="sign-petition-content-block-header">
+                                Body: 
+                            </div>
+                            <div class="sign-petition-content-block">
+                                {{$petition->body}}<br><br>
+                            </div>
+                        </div>
+
                     </div>
-
                     <br><br>
 
                     <div class="dashboard-title u-center">Petition Signatures</div>

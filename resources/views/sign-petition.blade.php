@@ -22,26 +22,55 @@
                         <img src="/{{$petition->picture_path}}" >
                         <br>
 
-                        Recipient: {{$petition->recipient_name}}<br><br>
-                        Recipient Email: {{$petition->recipient_email}}<br><br>
-                        Title:{{$petition->title}}<br><br>
-                        Summary:<br>{{$petition->summary}}<br><br>
-                        Body:<br>{{$petition->body}}<br><br>
-                        <br><br>
-                        <label>Type your name to sign:</label>
-                        <input type="text" name="signature">
-                        <label>Phone:</label>
-                        <input type="text" name="phone">
-                        <div class="u-center">
-                            <div class="button-container">
-                                <button type="submit">Sign Petition</button>
-                                <a href="/dashboard/"><button type="button">Cancel</button></a>
+                        <div class="sign-petition-content-block-header">
+                            Petition Recipient: 
+                        </div>
+                        <div class="sign-petition-content-block">
+                            {{$petition->recipient_name}} ({{$petition->recipient_email}})<br><br>
+                        </div>
+
+                        <div class="sign-petition-content-block-header">
+                             Title: 
+                        </div>
+                        <div class="sign-petition-content-block">
+                            {{$petition->title}}<br><br>
+                        </div>
+
+                        <div class="sign-petition-content-block-header">
+                            Summary: 
+                        </div>
+                        <div class="sign-petition-content-block">
+                            {{$petition->summary}}<br><br>
+                        </div>
+
+                        <div class="sign-petition-content-block-header">
+                            Body: 
+                        </div>
+                        <div class="sign-petition-content-block">
+                            {{$petition->body}}<br><br>
+                        </div>
+
+
+                        <div class="signature-container">
+                            <div class="signature-block">
+                                <br><br>
+                                <label>Type your name to sign:</label>
+                                <input type="text" name="signature">
+                                <label>Phone:</label>
+                                <input type="text" name="phone">
+                                <div class="u-center">
+                                    <div class="button-container">
+                                        <button type="submit">Sign Petition</button>
+                                        <a href="/dashboard/"><button type="button">Cancel</button></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 @include('form-errors')
             </form>
+            <br><br><br>
         </div>
     </body>
 </html>

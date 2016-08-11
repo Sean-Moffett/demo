@@ -188,6 +188,7 @@ table a:link, a:visited, a:hover, a:active {
 .petition-thanks-msg {
     color:  #ffffff;
     width:  100%;
+    font-size:  28px;
 }
 
 .sign-petition-container {
@@ -200,6 +201,42 @@ table a:link, a:visited, a:hover, a:active {
     color:  #ffffff;
     width:  100%;
 }
+
+.sign-petition-content-block-header {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: left;
+    width: 70%;
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:  20px;
+}
+.sign-petition-content-block {
+    text-align: left;
+    background-color:  #c0c0c0;
+    color: black;
+    width: 70%;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.signature-block-container {
+    margin-top: 50px;
+    text-align: center;
+    width:  100%;
+}
+
+.signature-block {
+    width:  400px;
+    text-align: left;
+    margin-left:  auto;
+    margin-right:  auto;
+}
+
+
 
 
 
