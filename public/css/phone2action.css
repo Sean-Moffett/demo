@@ -1,0 +1,205 @@
+
+html, body {
+    background-image: url("/images/background.png");
+    background-color: #cccccc;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+input[type=text] {
+    background-color: #f1f1f1;
+    color: #000000;
+    height: 30px;
+    width: 100%;
+    border-style: solid;
+    font-size: 18px;
+    margin-bottom:  30px;
+}
+
+label {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+}
+
+input[type=password] {
+    background-color: #f1f1f1;
+    color: #000000;
+    height: 30px;
+    width: 100%;
+    border-style: solid;
+    font-size: 18px;
+}
+
+textarea {
+    background-color: #f1f1f1;
+    color: #000000;
+    border-style: solid;
+    font-size: 18px;
+    width:100%;
+    height:100px;
+}
+
+
+button {
+    background: -webkit-linear-gradient(#888, #555);
+    background: linear-gradient(#888, #555);
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin: 20px auto;
+    color: #ccc;
+    background-color: #555;
+    border: 0 none;
+    border-radius: 3px;
+    text-shadow: 0 -1px 0 #000;
+    box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+}
+
+.button-container {
+    text-align:  center;
+}
+
+.u-center-form {
+    position: absolute;
+    margin: auto;
+    padding:  20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.login-form {
+    width: 400px;
+    height: 500px;
+    background-color: #ccc;
+}
+
+.registration-form {
+    width: 400px;
+    height: 680px;
+    background-color: #ccc;
+}
+
+.signature-form {
+    width: 400px;
+    height: 680px;
+    background-color: #ffffff;
+}
+
+.form-title
+{
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.form-errors
+{
+    color: #ff0000;
+    margin: 25px;
+    text-align: center;
+}
+
+.div-p2a-login-logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.u-center {
+    text-align: center;
+}
+
+.dashboard-title {
+    color:  #ffffff;
+    font-size:  36px;
+}
+
+.dashboard-form-container {
+    text-align: center;
+    width:  100%;
+    padding: 50px;
+}
+
+.dashboard-form {
+    text-align: left;
+    margin: auto;
+    padding:  20px;
+    background-color: #ccc;
+    border-radius: 3px;
+    width: 500px;
+}
+
+table {
+    width: 80%;
+    margin-left:auto; 
+    margin-right:auto;
+    border-style: solid;
+    border-color: white;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid white;
+}
+
+table, td {
+    text-align: left;
+    padding: 10px;
+}
+
+
+table,  td {
+    padding: 10px;
+    border: 1px solid white;
+    color: #ffffff;
+}
+
+table a:link, a:visited, a:hover, a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.petition-thanks-container {
+    margin-top: 50px;
+    text-align: center;
+    width:  100%;
+}
+
+.petition-thanks-msg {
+    color:  #ffffff;
+    width:  100%;
+}
+
+.sign-petition-container {
+    margin-top: 50px;
+    text-align: center;
+    width:  100%;
+}
+
+.sign-petition-content {
+    color:  #ffffff;
+    width:  100%;
+}
+
+
+
